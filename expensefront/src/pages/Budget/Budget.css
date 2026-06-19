@@ -1,0 +1,171 @@
+.budget-page__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.budget-page__income-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.budget-page__income-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.budget-page__income-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.budget-page__income-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #22c55e;
+  margin: 0 0 8px;
+}
+
+.budget-page__income-hint {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.budget-page__income-edit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.budget-page__income-edit input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.budget-page__overview {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  color: white;
+  text-align: left;
+}
+
+.budget-page__overview-item span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.budget-page__overview-item strong {
+  font-size: 22px;
+}
+
+.text-danger {
+  color: #fecaca !important;
+}
+
+.budget-page__section {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.budget-page__section h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.budget-page__desc {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.budget-page__set-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.budget-page__set-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.budget-page__set-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.budget-page__set-input span {
+  color: #64748b;
+}
+
+.budget-page__set-input input {
+  width: 100px;
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: right;
+  font-family: inherit;
+}
+
+.budget-page__set-input input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.budget-page__progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.budget-page__empty {
+  text-align: center;
+  padding: 48px;
+  background: white;
+  border-radius: 16px;
+  border: 1px dashed #e2e8f0;
+  color: #94a3b8;
+}
+
+.budget-page__empty span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+  .budget-page__top {
+    grid-template-columns: 1fr;
+  }
+}

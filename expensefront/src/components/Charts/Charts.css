@@ -1,0 +1,157 @@
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.charts--compact {
+  display: block;
+}
+
+.charts__card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.charts__card--full {
+  grid-column: 1 / -1;
+}
+
+.charts__card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.charts__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.charts__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.charts__legend-item span {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.charts__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.charts__bar-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 90px;
+  align-items: center;
+  gap: 12px;
+}
+
+.charts__bar-label {
+  font-size: 13px;
+  color: #475569;
+  text-align: left;
+}
+
+.charts__bar-track {
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.charts__bar-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.charts__bar-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: right;
+}
+
+.charts__empty {
+  text-align: center;
+  padding: 60px 24px;
+  color: #94a3b8;
+  background: white;
+  border-radius: 16px;
+  border: 1px dashed #e2e8f0;
+}
+
+.charts__empty span {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.charts__empty p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.charts__empty--small {
+  padding: 40px;
+}
+
+.category-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-breakdown__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.category-breakdown__item span {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.category-breakdown__item p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.category-breakdown__item strong {
+  font-size: 15px;
+  color: #0f172a;
+}
+
+@media (max-width: 900px) {
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .charts__bar-row {
+    grid-template-columns: 80px 1fr 70px;
+  }
+}
