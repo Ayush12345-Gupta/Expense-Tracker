@@ -1,0 +1,4 @@
+node_modules/
+Expensebackend/node_modules/
+expensefront/node_modules/
+.env
